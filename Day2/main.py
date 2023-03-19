@@ -33,7 +33,9 @@ list_into_dict(userInput)
 """
 
 
+
 # --------------------Enhancing Assignment [3]----------------
+"""
 def list_into_dict(str):
     str = str.split(' ')
     d = {}
@@ -45,3 +47,24 @@ def list_into_dict(str):
 
 userInput = input('enter input : ')
 list_into_dict(userInput)
+"""
+
+# ------------------------------------------- calculate area ------
+def calArea(name, num1, num2):
+    pi = 3.14
+    if name == 'tri':
+        return 0.5 * num1 * num2
+    if name == 'rect':
+        return num1 * num2
+    if name == 'sq':
+        return num1 ** 2
+    if name == 'cir':
+        return pi * num1 ** 2
+    else:
+        return 'not found'
+
+
+print('tri:', calArea('tri', 4, 5))
+print('rect', calArea('rect', 4, 5))
+print('sq', calArea('sq', 4, 0))
+print('cir', calArea('cir', 4, 0))
